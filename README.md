@@ -35,7 +35,7 @@ Or install it yourself as:
 
 ```ruby
 connection = Faraday::Connection.new do |builder|
-  builder.request :timer
+  builder.request :timer # timeout: option available
   builder.adapter Faraday.default_adapter
 end
 
